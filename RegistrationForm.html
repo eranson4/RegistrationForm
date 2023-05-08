@@ -2,38 +2,45 @@
 <html lang="en">
 
 <head>
+    <!-- the title of the document that will show up on the page -->
     <title>Registration Form</title>
 </head>
 
 <body>
-    <form action="/process" method="post">
+    <!-- start of the form -->
+    <form action="/process" method="post"> 
+        <!-- Header name and title of the form -->
         <h1 style="font-size: 60px; font-family: Arial, Helvetica, sans-serif ;">Registration Form</h1>
         <div>
-            <label>First Name: *</label>
-            <input type="text" name="name" placeholder="Your name...">
+            <!-- divided from the rest of the form to have its own area -->
+            <label>First Name: *</label> <!-- the label of the area for the box -->
+            
+            <!-- the input type is text, the name = name
+                and the place holder is what shows up as guidance in the empty form box-->
+            <input required type="text" name="name" placeholder="Your name...">
         </div>
         <div><br>
             <label>Last Name: *</label>
-            <input type="text" name="name" placeholder="Your name...">
+            <input required type="text" name="name" placeholder="Your name...">
         </div>
         <div><br>
             <label>Email Address: *</label>
-            <input type="text" name="name" placeholder="Your name...">
+            <input required type="text" name="name" placeholder="Your name...">
         </div>
         <div><br>
-            <label>Password: *</label>
-            <input type="password" password="name" placeholder="Enter Your Pswd...">
+            <label>Password: *</label> <!-- pass word type blocks out normal lettering for security purposes -->
+            <input required type="password" password="name" placeholder="Enter Your Pswd...">
         </div>
         <div><br>
             <label>Confirm Password: *</label>
-            <input type="password" password="name" placeholder="Re-enter Your Pswd...">
+            <input required type="password" password="name" placeholder="Re-enter Your Pswd...">
         </div>
         <div><br>
-            <label>Birthday: *</label>
-            <input type="date" date="name" placeholder="mm/dd/yyyy">
+            <label>Birthday: *</label> <!-- date type brings up the calender for selecting dates -->
+            <input required type="date" date="name" placeholder="mm/dd/yyyy">
         </div>
         <div><br>
-            <label>Gender Identity: </label>
+            <label>Gender Identity: </label> <!-- radio buttons to click to select an option-->
             <input type="radio" name="font" value="bold" id="male">
             <label for="male">Male</label>
             <input type="radio" name="font" value="bold" id="Female">
@@ -44,10 +51,10 @@
             <label for="male">I prefer not to answer</label>
         </div>
         <div>
-            <p>A short description about myself:</p>
+            <p>A short description about myself:</p> <!-- a text area for commenting -->
             <textarea name="comment" cols="65" rows="15"></textarea>
         </div>
-        <label>Favorite Language: </label>
+        <label>Favorite Language: </label> <!-- a select drop box so that you can select one of your favorite languages-->
         <select name="languages">
             <option value="Javascript">Javascript</option>
             <option value="Python">Python</option>
@@ -58,10 +65,12 @@
             <option value="HTML">HTML</option>
         </select>
         <div><br>
-            <input type="checkbox" name="accept" id="accept">
+            <!-- a check box to click if you would like to recieve email updates-->
+            <input type="checkbox" name="accept" id="accept"> 
             <label for="accept">Yes, I would like to receive periodic email updates</label>
         </div>
         <div><br>
+            <!-- a create account, submit button to lead youo to the page to create an account -->
             <input type="submit" value="Create Account">
             <p>*Indicates a required field</p>
         </div>
